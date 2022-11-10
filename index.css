@@ -1,0 +1,139 @@
+* {
+  font-family: "sweet-sans-pro", sans-serif;
+}
+
+.button-reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 25px);
+  bottom: 100px;
+  height: 1px;
+  width: 50px;
+  border-bottom: 1px solid #252525;
+}
+
+.bestseller a,
+.footer-section a,
+.flat-image-text a,
+.text a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "sweet-sans-pro", sans-serif;
+}
+
+.nav-logo {
+  flex-grow: 0;
+  width: 160px;
+}
+
+button:hover {
+  background-color: #bc9d59;
+}
+
+/* dopdown */
+
+ul {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+ul li {
+  display: inline-block;
+  line-height: 21px;
+  text-align: left;
+}
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #bc9d59;
+  z-index: 8;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+}
+ul li ul.dropdown {
+  min-width: 100%; /* Set width of the dropdown */
+  background: white;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  width: 1190px;
+  padding: 50px;
+}
+ul li:hover ul.dropdown {
+  display: block;
+}
+ul li ul.dropdown li {
+  display: block;
+}
+.text a:hover {
+  color: #bc9d59;
+}
+
+/* footer */
+
+.site-footer .footer-section:not(:last-of-type) {
+  border-right: 1px solid #e6e4d9;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 18px !important;
+}
+.grow-image {
+  width: 100%;
+  padding: 0 30px;
+
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+.mobile-menu button {
+  background-color: #fcf4ee;
+  border: 2px solid #f2cfb4;
+  outline: none;
+  padding: 8px 16px;
+  transition: background-color 200ms ease;
+}
+
+.mobile-menu button:hover {
+  background-color: #f2cfb4;
+}
+
+.mobile-menu button + button {
+  margin-top: 0.25rem;
+}
+
+.bottom-images img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* media quirey */
+
+@media (min-width: 992px) {
+  .nav-logo {
+    width: 240px;
+  }
+}
